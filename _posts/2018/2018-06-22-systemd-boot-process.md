@@ -23,12 +23,12 @@ After the kernel is initialized, it launches systemd process. Detailed Linux boo
 systemd provides parallelized boot, uses sockets and d-bus activation for starting services, offers on-demand daemon launch, etc. Thus, we can easily attach our own daemons to systemd by creating service scripts in either `/lib/systemd/system` or `/etc/systemd/system` directories. For the daemons to be automatically and normally launched, we need to acknowledge the systemd launch process, which this post will investigate more.
 
 
+
 ## systemd boot process in Linux
 The following chart is a structural overview of well-known systemd units and their position in the boot-up logic, according to freedesktop.
 The chart comes from [here](https://www.freedesktop.org/software/systemd/man/bootup.html).
 
-![systemd_boot](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/7e348109-8513-4a45-9023-6e776de04883)
-
+![systemd_boot](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/7e348109-8513-4a45-9023-6e776de04883){: .align-center}
 
 
 The first target of systemd to be launched is `default.target`, which is typically a symbolically linked to `graphical.target` or `multi-user.target` (depending on whether system is configured for a GUI or only a text console). If you want to add your own system service into systemd hierarchy, it would be usally be added `multi-user.target`, like for example:
@@ -90,9 +90,12 @@ RemoveOnStop=yes
 There are [more special systemd units](https://www.freedesktop.org/software/systemd/man/systemd.special.html), such like `network.target` or `network-online.target`, by default freedesktop does not show which position those targets sit in.
 
 
+
 ## What to learn next
 - [systemd-analyze](https://www.freedesktop.org/software/systemd/man/systemd-analyze.html)
 > - An analyze and debug system manager for boot-up performance statistics.
+
+
 
 ## References
 - [bootup - System bootup process](https://www.freedesktop.org/software/systemd/man/bootup.html)
