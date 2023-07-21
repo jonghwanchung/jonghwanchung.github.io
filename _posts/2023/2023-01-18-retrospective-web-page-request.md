@@ -10,13 +10,13 @@ classes: wide
 ---
 
 
-This post covers the `network protocol stack`` by taking an integrated view of each layers. It uses a simple example: *downloading a web page from web server to browser*.
+This post covers the `network protocol stack` by taking an integrated view of each layers. It uses a simple example: *downloading a web page from web server to browser*.
 
 
 ## Assumption
 The following figure is an initial configuration of network components including end device, router, IPS, and web server. The router is connected to its ISP(comcast.net) which provides DHCP and DNS services for the local network.
 
-<<< IMAGE >>>
+![image](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/7c7ae5b6-22a9-4ae2-8f60-fac068b02799){: .align-center}
 
 
 
