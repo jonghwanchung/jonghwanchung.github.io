@@ -26,7 +26,7 @@ systemd provides parallelized boot, uses sockets and d-bus activation for starti
 The following chart is a structural overview of well-known systemd units and their position in the boot-up logic, according to freedesktop.
 The chart comes from [here](https://www.freedesktop.org/software/systemd/man/bootup.html).
 
->>> Figure <<<
+![systemd_boot](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/7e348109-8513-4a45-9023-6e776de04883)
 
 
 
