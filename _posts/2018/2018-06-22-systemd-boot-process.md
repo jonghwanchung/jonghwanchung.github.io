@@ -9,6 +9,8 @@ toc_label: "Table of Contents"
 classes: wide
 ---
 
+
+
 ## What is _systemd_?
 
 > "`systemd` is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
@@ -25,6 +27,7 @@ systemd provides parallelized boot, uses sockets and d-bus activation for starti
 
 
 ## systemd boot process in Linux
+
 The following chart is a structural overview of well-known systemd units and their position in the boot-up logic, according to freedesktop.
 The chart comes from [here](https://www.freedesktop.org/software/systemd/man/bootup.html).
 
@@ -92,12 +95,14 @@ There are [more special systemd units](https://www.freedesktop.org/software/syst
 
 
 ## What to learn next
+
 - [systemd-analyze](https://www.freedesktop.org/software/systemd/man/systemd-analyze.html)
 > - An analyze and debug system manager for boot-up performance statistics.
 
 
 
 ## References
+
 - [bootup - System bootup process](https://www.freedesktop.org/software/systemd/man/bootup.html)
 - [Systemd Boot Process a Close Look in Linux](https://linuxopsys.com/)
 - [systemd.special - Special systemd units](https://www.freedesktop.org/software/systemd/man/systemd.special.html)
