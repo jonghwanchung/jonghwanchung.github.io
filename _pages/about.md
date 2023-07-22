@@ -27,7 +27,7 @@ toc_label: "On this page"
 ## Work Experience
 - **Backend Developer**  
   National Agricultural Cooperative Federation (Nonghyup Group Inc.)  
-  2022.08 ~ 현재
+  2022.08 ~ current
 
 - **Security Software Developer**  
   National Health Insurance Service  
