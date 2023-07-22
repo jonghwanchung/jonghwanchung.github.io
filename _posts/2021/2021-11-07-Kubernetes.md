@@ -55,7 +55,8 @@ A `master node` contains the following Kubernetes components:
 
 Details are well explained in [here](https://kubernetes.io/docs/concepts/overview/components/).
 
-<<< Image >>>
+![image](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/15e97513-46d7-4d95-b372-7b87dc9c574c){: .align-center}
+
 
 Kubernetes architecture illustrating Container Runtime as Docker. Kubernetes currently support Docker, containerd, and CRI-O as its container runtime. [[Image Source]](https://sensu.io/blog/how-kubernetes-works)
 
@@ -76,9 +77,10 @@ In my thought, it is mainly because communications between containers. Kubernete
 
 Hence containerized applications in each pod are slightly different from traditional containers : those in the same pod share some namespaces : netns, ipcns, and optionally pidns.
 
-<< Image >>
+![image](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/fe1b5275-951e-40fa-a124-4b12da61ef01)
 
-Pod architecture [[Image Source]](https://developers.redhat.com/blog/2019/01/15/podman-managing-containers-pods)
+
+Pod architecture [[Image Source]](https://developers.redhat.com/blog/2019/01/15/podman-managing-containers-pods){: .align-center}
 
 
 Those shared Linux kernel resources are held by `pause process` in infra container. The infra container is created alongside the corresponding pod, and whenever each container is created into the pod, its namespace and cgroup are shared to the container.
