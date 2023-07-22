@@ -7,65 +7,81 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
+classes: wide
 ---
 
 
+
 ## What is _Complexity_?
-**알고리즘**  
-특정한 크기의 입력(input)에 대한 결과(output)을 계산하는 절차
 
-**알고리즘의 성능 지표**  
-1) `시간 복잡도` (Time Complexity) : 알고리즘의 `수행 시간`(연산 횟수) 분석  
-2) `공간 복잡도` (Space Complexity) : 알고리즘의 `메모리 사용량` 분석
+> "In computer science, (computational) complexity of an algorithm is the `amount of resources` required to run it. Particular focus is given to `computation time` (generally measured by the number of needed elementary operations) and `memory storage requirements`. The complexity of a problem is the complexity of the `best algorithms` that allow solving the problem."
+> <br><br>
+> [https://en.wikipedia.org/wiki/Computational_complexity](https://en.wikipedia.org/wiki/Computational_complexity)
 
-> 동일한 기능을 수행하는 알고리즘의 경우,  
-> 일반적으로 "*좋은 알고리즘 = 복잡도 낮은 알고리즘*" 이다.
-
-
-**Note**  
-Readability : 코드 해석이 용이한 정도
+**Algorithm**<br>
+A well-defined `computational procedure` that consists of input, computational procedure, and output.<br>
+   1) *input* : a value or a set of values.<br>
+   2) *computational procedure* : a sequence of computational steps that transform the input to output.<br>
+   3) *output* : a value or a set of values.<br>
 {: .notice--success}
 
-> **Note**
-> 가독성(readability) : 코드 해석의 용이한 정도
 
 
-> **Why consider Complexity?**
-> `프로그램의 규모(처리 데이터의 양)`는 시간이 지날수록 방대해지고 있다. 데이터의 양이 적은 경우에는 알고리즘(효율성)을 고려하지 않아도 크게 상관이 없을 수 있지만, 데이터의 양이 많아지면 알고리즘 간의 `효율성 차이`는 커질 수 밖에 없으므로, 프로그램 성능(복잡도)를 고려할 필요가 있다.
+## Why consider Complexity?
+
+Different algorithms devised to solve the same problem differ in their efficiency. Thus, `system performance` depends on choosing efficient algorithms. Also, today, the amount of data processed by program(s) becomes more massive. If the amount of data is small, the efficiency of algorithm may not be of significant concern. However, as the `data volume` increases, the importance of efficiency becomes greater. Therefore, it is essential to consider the complexity for software development.
+
+**Readability**<br>
+The ease with which a developer can understand a written code.
+{: .notice--success}
 
 
-## 빅-오(Big-O) 표기법
-상한 점금(asymptotically upper bound)
- - 알고리즘의 Worst-case 실행 시간을 표현할 때 사용
- - 편의상, Best, Average, Worst Case 실행 시간을 표현할 때 사용
 
-| 시간복잡도<br>(order of growth) | 의미<br>(name) | 설명<br>(description) |
-|---|---|---|
-| O(1) | 상수 시간(Contant time) | 입력 크기(n)에 상관없이 일정한 연산을 수행 |
-| O(log₂ n) | 로그 시간(Logarithmic time) | 입력 크기(n)이 커지면 연산 횟수가 log₂ n 에 비례해서 증가 |
-| O(n) | 선형 시간(Linear time) | 입력크기(n)이 커지면 연산 횟수가 n에 비례해서 증가 |
-| O(n²) | 2차 시간(Quadratic time) | 입력크기(n)이 커지면 연산 횟수가 n²에 비례해서 증가 |
-| O(2ⁿ) | 지수 시간(Expotential time) | 입력 크기(n)가 커지면 연산 횟수가 2ⁿ에 비례해서 증가 |
+## Analyzing the Algorithm
 
-> **Note**
-> 빅-오메가(Big-Ω) : 하한 점금(asympotically lower bound)  
-> **Note**
-> 빅-세타(Big-θ) : Big-O와 Big-Ω의 평균(sandwitch; asympotically tight bound)
+It predicts the `resources` (ex. computational time, memory, etc) that algorithms require. For your reference, each instruction takes a constant amount of time.
+
+- `Time Complexity` : the amount of `computational time` taken by an algorithm. (# of primitive instructions executed)
+- `Space Complexity` : the amount of `memory space` taken by an algorithm. (memory usage)
+
+
+
+## Asymptotic Notation
+
+It is convenient for describing the worst-case running time function which usually is defined only on integer input sizes, because it abstracts away some details of the running time function.
+
+- `Big-O Notation` (O) : an asymptotically `upper bound` for input(n). (for expression of `worst-case` running time)
+- `Big-theta Nontation` (θ) : an asymptotically `tight bound` for input(n). (for expression of ??? running time)
+- `Big-omega Notation` (Ω) : an asymptotically `lower bound` for input(n). (for expression of `best-case` running time)
+
+
+
+## Order(Rate) of Growth
+
+It is used to simplify the analysis of algorithm by ignoring the constant coefficients in general formula. The `simplified order` is used to compare the algorithm's running time.
+
+| Order of growth | Name | Description | example |
+|---|---|---|---|
+| O(1)      | Contant         | 입력 크기(n)에 상관없이 일정한 연산을 수행 | add two numbers |
+| O(log₂ n) | Logarithmic     | 입력 크기(n)이 커지면 연산 횟수가 log₂ n 에 비례해서 증가 | binary search |
+| O(n)      | Linear time     | 입력크기(n)이 커지면 연산 횟수가 n에 비례해서 증가 | loop |
+| O(n²)     | Quadratic time  | 입력크기(n)이 커지면 연산 횟수가 n²에 비례해서 증가 | double loop |
+| O(2ⁿ)     | Expotential time| 입력 크기(n)가 커지면 연산 횟수가 2ⁿ에 비례해서 증가 | exhaustive search |
+
 
 
 ## How to reduce the Time Complexity?
-1. 반복문의 숫자를 줄이자
-2. 적절한 자료구조의 사용
-3. 적절한 알고리즘의 이용
+
+1. Utilize the useful `data structure`.
+2. Utilize the efficient `algorithm technique`.
+3. Reduce the `iterations` of loop.
+
 
 
 ## Trade-off between Time Complexity and Space Complexity
+
 > _Time Complexity_   vs   _Space Complexity_
 
-Because there is a `trade-off relationship` between time complexity and space complexity,
-it is advisable to develop algorithms that achieve an appropriate balance between the two.
-However, in situations where only one aspect can be prioritized, it is preferable to approach the problem by reducing time complexity.
-This is because algorithm performance is more affected by computational costs(CPU) than spacial costs(memory).
+Because there is a `trade-off relationship` between time complexity and space complexity, it is advisable to develop algorithms that achieve an appropriate balance between the two. However, in situations where only one aspect can be prioritized, it is preferable to approach the problem by reducing time complexity. This is because algorithm performance is more affected by computational costs(CPU) than spacial costs(memory).
 
-In this regard, there are some techniques that use slightly more memory to avoid repetitive computations or manage more information.
-For example, _memoization_ (dynamic programming) is a way to reduce computational time at the expense of using more memory.
+In this regard, there are some techniques that use slightly more memory to avoid repetitive computations or manage more information. For example, _`memoization`_ (dynamic programming) is a way to reduce computational time at the expense of using more memory.
