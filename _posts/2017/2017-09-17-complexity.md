@@ -62,11 +62,11 @@ It is used to simplify the analysis of algorithm by ignoring the constant coeffi
 
 | Order of growth | Name | Description | example |
 |---|---|---|---|
-| O(1)      | Contant         | 입력 크기(n)에 상관없이 일정한 연산을 수행 | add two numbers |
-| O(log₂ n) | Logarithmic     | 입력 크기(n)이 커지면 연산 횟수가 log₂ n 에 비례해서 증가 | binary search |
-| O(n)      | Linear time     | 입력크기(n)이 커지면 연산 횟수가 n에 비례해서 증가 | loop |
-| O(n²)     | Quadratic time  | 입력크기(n)이 커지면 연산 횟수가 n²에 비례해서 증가 | double loop |
-| O(2ⁿ)     | Expotential time| 입력 크기(n)가 커지면 연산 횟수가 2ⁿ에 비례해서 증가 | exhaustive search |
+| O(1)      | Contant         | Regardless of input size, it always takes a fixed number of steps. | add two numbers |
+| O(log₂ n) | Logarithmic     | As input size(n) increases, #(operations) increases proportionally to log₂ n. | binary search |
+| O(n)      | Linear time     | As input size(n) increases, #(operations) increases proportionally to n. | loop |
+| O(n²)     | Quadratic time  | As input size(n) increases, #(operations) increases proportionally to n². | double loop |
+| O(2ⁿ)     | Expotential time| As input size(n) increases, #(operations) increases proportionally to 2ⁿ. | exhaustive search |
 
 
 
