@@ -68,6 +68,7 @@ It is used to simplify the analysis of algorithm by ignoring the constant coeffi
 | O(n²)     | Quadratic time  | As input size(n) increases, #(operations) increases proportionally to n². | double loop |
 | O(2ⁿ)     | Expotential time| As input size(n) increases, #(operations) increases proportionally to 2ⁿ. | exhaustive search |
 
+![image](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/b50b3292-a1ba-42f7-a1c1-77ed28d0de2f){: .align-center}
 
 
 ## How to reduce the Time Complexity?
