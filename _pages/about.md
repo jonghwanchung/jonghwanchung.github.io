@@ -40,14 +40,14 @@ toc_label: "On this page"
 - **Research Assistant**
 
 
-## Project
+<!-- ## Project
 
 ### Implement Windows DLL
 TODO
 
 ### I-ACK (Implicit ACK)
 Improving Wi-Fi Performance using Smart AP
- - Keywords : WLAN AP, OpenWrt, Ath9k
+ - Keywords : WLAN AP, OpenWrt, Ath9k -->
 
 
 ## Publication
