@@ -19,9 +19,11 @@ toc_label: "On this page"
 - **Seoul National University (SNU)**  
   M.S degree in Computer Science and Engineering  
   (Advisor : *Prof. Chong-kwon Kim*)
+  2015.03 ~ 2017.02
 
 - **Soongsil University (SSU)**  
   B.S degreee in Computer Science and Engineering
+  2011.03 ~ 2015.02
 
 
 ## Work Experience
@@ -30,15 +32,17 @@ toc_label: "On this page"
   2022.08 ~ current
 
 - **Security Software Developer**  
-  National Health Insurance Service  
+  National Health Insurance Service (Security team 1)  
   2021.07 ~ 2022.08
 
 - **System Software Developer**  
-  TmaxOS Inc.  
+  TmaxOS Inc. (System Kernel team 1-1)  
   2017.09 ~ 2021.07
 
-- **Research Assistant**
-
+- **Research Assistant (Expert level)**
+  Gacheon University.  
+  (Advisor : *Prof. Jeahyuk Choi*)
+  2017.03 ~ 2017.09
 
 <!-- ## Project
 
