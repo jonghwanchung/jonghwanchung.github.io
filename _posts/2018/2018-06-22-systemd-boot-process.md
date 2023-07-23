@@ -10,7 +10,7 @@ toc_label: "Table of Contents"
 
 
 
-## What is _systemd_?
+## What is systemd?
 
 > "`systemd` is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
 > <br>
@@ -93,10 +93,10 @@ There are [more special systemd units](https://www.freedesktop.org/software/syst
 
 
 
-## What to learn next
+## What to learn next?
 
 - [systemd-analyze](https://www.freedesktop.org/software/systemd/man/systemd-analyze.html)
-> - An analyze and debug system manager for boot-up performance statistics.
+   - An analyze and debug system manager for boot-up performance statistics.
 
 
 
