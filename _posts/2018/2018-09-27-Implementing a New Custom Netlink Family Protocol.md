@@ -42,7 +42,7 @@ In this post, we use the existing netlink protocol (not generic netlink protocol
 
 THe following is a **basic kernel module** that creates a custom netlink protocol family. The value of which is **30**, using the kernel function `netlink_kernel_create()`. Note that the signature of the function was changed since kernel version 2.6. [[link]](https://elixir.bootlin.com/linux/latest/source/include/linux/netlink.h#L58)
 
-```C
+```c
 static inline struct sock *
 netlink_kernel_create(struct net *net, int unit, struct netlink_kernel_cfg *cfg)
 {
@@ -50,7 +50,7 @@ netlink_kernel_create(struct net *net, int unit, struct netlink_kernel_cfg *cfg)
 }
 ```
 
-```C
+```c
 #include <linux/kernel.h>
 #include <linux/netlink.h>
 #include <linux/module.h>
@@ -99,7 +99,7 @@ This creates a kernel module that listens netlink protocol family with the numbe
 
 The below code is a **userspace program** that can send and receive messages from the kernel throught `NETLINK_CUSTOMFAMILY` family protocol (30).
 
-```C
+```c
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -162,7 +162,7 @@ Received message: HELLO KERNEL FROM USER
 
 Let's make the **kernel module** send a response for a request.
 
-```C
+```c
 static void custom_nl_receive_message(struct sk_buff *skb) {
   struct nlmsghdr *nlh = (struct nlmsghdr *) skb->data;
   pid_t pid = nlh->nlmsg_pid; // pid of the sending process
@@ -191,7 +191,7 @@ The userspace process will receive a netlink message with `NLMSG_DONE` type. It 
 
 The kernel module can also send a **multicast netlink message**, a broadcast for a specific group in netlink family.
 
-```C
+```c
 #define NETLINK_MYGROUP 2
 
 static void custom_nl_send_user (void) {
