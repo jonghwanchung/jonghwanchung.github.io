@@ -17,6 +17,7 @@ toc_label: "Table of Contents"
 
 
 ### Kubernetes is really an orchestration tool?
+
 Kubernetes does not call itself as an orchestration system, due to its different behaviors from the technical definition of "orchestration".
 
 **Orchestration (from [Wikipedia](https://en.wikipedia.org/wiki/Orchestration_%28computing%29))**<br>
