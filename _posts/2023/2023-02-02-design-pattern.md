@@ -19,7 +19,7 @@ There are many formalized best practices that programmers can use when designing
 - `cohesion` : the degree to which all of the methods and data in a component are related to one another.
 
 
-<< Image >>
+![image](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/05a55936-a812-4088-b885-37c64ec56a92){: .align-center}
 <span style="font-size:80%">Coupling and Cohesion.</span> [[Source]](https://www.coursera.org/lecture/object-oriented-design/1-3-1-coupling-and-cohesion-q8wGt)
 
 
@@ -34,7 +34,7 @@ Among these design patterns, the three most popular design patterns are:
  - `MVVM` : Model(data & business logic), View(UI visualization, command), **ViewModel**(model update, data & data-binding)
 
 
-<< Image >>
+<< Image(TOBE) >>
 <span style="font-size:80%">Architecture of MVC, MVP, and MVVM</span>
 
 
