@@ -61,7 +61,7 @@ Improving Wi-Fi Performance using Smart AP
 - **Jonghwan Chung**, Dahyeon Han, Jiyoung Kim, and Chong-Kwon Kim, "<a href="https://ieeexplore.ieee.org/abstract/document/7881739">Machine learning based path management for mobile devices over MPTCP</a>", *IEEE International Conference on Big Data and Smart Computing (BigComp)*, Pages 206 - 209, 2017
    * Skill : IEEE 802.11 b/g/n, 4G/LTE, AOSP, WEKA
 
-- **Jonghwan Chung**, "A Wireless Network Selection Scheme based on Machine Learning", *Seoul National University*, 2017 (<span style="color:blue">Master Thesis</span>)
+- **Jonghwan Chung**, "A Wireless Network Selection Scheme based on Machine Learning", *Seoul National University*, 2017 (**Master Thesis**)
    * Skill : IEEE 802.11 b/g/n, 4G/LTE, AOSP, WEKA
 
 
