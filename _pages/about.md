@@ -66,7 +66,7 @@ Improving Wi-Fi Performance using Smart AP
 
 
 ## Technical Skill
-Programming Language : C/C++, Java, Python  
+Programming Language : C/C++, Java/Spring, Python  
 Debugging & Analysis : GNU GDB, Strace, Valgrind, Wireshark, TCPDump/Pcap, Iperf3, WEKA, Tensorflow  
 Framework : Unix/Linux, AOSP, OpenWrt(Ath9k), Ubertooth One, WPA-Supplicant  
 Collaboration Tools : Git, Jira, Slack, Trello  
