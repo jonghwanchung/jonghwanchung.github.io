@@ -78,7 +78,3 @@ The typical flow of interactions in MVVM pattern is as follows:
 The MVP and MVVM patterns remove the dependency between View and Model. In other words, the View is not Model-aware. This decoupling make it easier to respond to changes of application features. However, these patterns are difficult to design and implement.
 
 
-
-## Reference
-
-- [github]()
