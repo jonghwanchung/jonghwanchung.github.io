@@ -8,10 +8,9 @@ toc_label: "On this page"
 
 
 
-<center>"될 때까지 도전하는 개발자"</center>  
+<center>"Unlimited challenges"</center>  
 <br>
-아무리 어려운 일이라도 해결하는 것에 보람을 느낍니다. 특히, 기존 기술의 문제점 및 한계점을 분석하고 이를 개선하는 것을 좋아하는 개발자입니다.
-네트워크, 운영체제, 보안, 웹, 모바일 등 다양한 분야의 프로젝트와 실무 경험을 통해 문제 해결 능력을 갖추기 위해 노력하고 있습니다.
+I find fulfillment in solving even the most challenging task. Especially, as a software developer, I prefer analyzing the drawbacks and limitations of existing technologies and improving them. I am actively trying to acquire problem-solving skills through various projects and professional experiences in networking, operating systems, security, and other fields.
 
 
 
