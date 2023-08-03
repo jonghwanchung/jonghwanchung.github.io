@@ -34,7 +34,7 @@ Among these design patterns, the three most popular design patterns are:
  - `MVVM` : Model(data & business logic), View(UI visualization, command), **ViewModel**(model update, data & data-binding)
 
 
-<< Image(TOBE) >>
+![image](https://github.com/jonghwanchung/jonghwanchung.github.io/assets/97339878/e97c0b34-91a4-4232-8852-0ba0cebaf243){: .align-center}
 <span style="font-size:80%">Architecture of MVC, MVP, and MVVM</span>
 
 
@@ -78,7 +78,3 @@ The typical flow of interactions in MVVM pattern is as follows:
 The MVP and MVVM patterns remove the dependency between View and Model. In other words, the View is not Model-aware. This decoupling make it easier to respond to changes of application features. However, these patterns are difficult to design and implement.
 
 
-
-## Reference
-
-- [github]()
