@@ -40,7 +40,7 @@ I find fulfillment in solving even the most challenging task. Especially, as a s
 
 
 ## Research Experience
-- **Research Assistant (Expert level)**
+- **Research Assistant (Expert level)**  
   Gacheon University  
   (Advisor : *Prof. Jeahyuk Choi*)  
   2017.03 ~ 2017.09
